@@ -2,7 +2,6 @@ import keyboard
 from ultralytics import YOLO
 from ElswordBot.modules import track_character, list_window_titles, activate_window_and_press
 
-
 def main():
     """Initialize and run the Elsword Bot."""
     # model = YOLO('./models/best.pt')
@@ -14,7 +13,7 @@ def main():
     # track_character(model=model, delay=1.0)
 
     list_window_titles()
-    activate_window_and_press(window_title="Saltfish" , key="k")
+    activate_window_and_press(window_title="[x64] Elsword" , key="d" , press_count=1000)
 
 if __name__ == "__main__":
     main()
