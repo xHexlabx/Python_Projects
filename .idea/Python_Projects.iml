@@ -5,7 +5,7 @@
       <excludeFolder url="file://$MODULE_DIR$/ElswordBot/.venv" />
       <excludeFolder url="file://$MODULE_DIR$/PokeBot/.venv" />
     </content>
-    <orderEntry type="jdk" jdkName="Elsword_envs" jdkType="Python SDK" />
+    <orderEntry type="jdk" jdkName="TypeBreaker" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
   </component>
 </module>
