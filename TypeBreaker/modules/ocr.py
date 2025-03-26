@@ -1,8 +1,12 @@
-from easyocr import Reader
+import pytesseract
+from PIL import Image
 
-def ocr (image_path : str) :
 
-    reader = Reader(["en", "th"])  # English and Thai
-    result = reader.readtext(image=image_path , detail=0)
+def ocr (image) :
 
-    return result
+    pytesseract.pytesseract.tesseract_cmd = r'C:\Program Files\Tesseract-OCR\tesseract.exe'
+
+    # Use pytesseract to extract text from the image
+    text = pytesseract.image_to_string(image).lower()
+
+    return text

@@ -10,6 +10,8 @@ def data_screen_capture(x1: int, y1: int, x2: int, y2: int,interval_seconds: int
 
     cnt = 0
 
+    time.sleep(3)
+
     try:
         while True:
             cnt += 1
@@ -25,7 +27,7 @@ def data_screen_capture(x1: int, y1: int, x2: int, y2: int,interval_seconds: int
             pyautogui.click()
             time.sleep(interval_seconds)
 
-            if cnt == 1000 : break
+            if cnt == 100 : break
 
     except KeyboardInterrupt:
         print("\nScreen capture stopped.")
